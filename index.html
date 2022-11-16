@@ -17,8 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- <link rel="stylesheet" href="./css/normalize.css" /> -->
-    <!-- <link rel="stylesheet" href="./css/aside.css"/> -->
+
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
@@ -43,11 +42,22 @@
             </li>
           </ul>
         </nav>
-
+        <button type="button" class="menu-button is-open">
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use
+              class="icon-cross"
+              href="./images/icon/symbol-defs.svg#icon-menu_40px"
+            ></use>
+            <use
+              class="icon-menu"
+              href="./images/icon/symbol-defs.svg#icon-close_40px"
+            ></use>
+          </svg>
+        </button>
         <ul class="menu items">
           <li class="menu__item">
             <a class="link menu__contact" href="mailto:info@devstudio.com">
-              <svg class="menu__icon {" width="16px" height="12px">
+              <svg class="menu__icon" width="16" height="12">
                 <use href="./images/icon/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -56,7 +66,7 @@
 
           <li class="menu__item">
             <a class="menu__contact link" href="tel:+380961111111"
-              ><svg class="menu__icon {" width="10px" height="16px">
+              ><svg class="menu__icon" width="10" height="16">
                 <use
                   href="./images/icon/symbol-defs.svg#icon-smartphone "
                 ></use>
@@ -66,6 +76,12 @@
           </li>
         </ul>
       </div>
+      <ul class="cocial-name">
+        <li><a href="" class="social-text link">Instagram</a></li>
+        <li><a href="" class="social-text link">Twitter</a></li>
+        <li><a href="" class="social-text link">Facebook</a></li>
+        <li><a href="" class="social-text link">LinkedIn</a></li>
+      </ul>
     </header>
 
     <main>
@@ -79,6 +95,9 @@
           </button>
         </div>
       </section>
+      <!-- <section class="menu-mobile">
+
+      </section> -->
       <section class="section features">
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
@@ -138,7 +157,7 @@
         </div>
       </section>
 
-      <section class="section activity">
+      <!-- <section class="section activity">
         <div class="container">
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="items activity__items">
@@ -439,9 +458,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-
+    <!-- 
     <footer class="footer footer__wrapper">
       <div class="container footer__container">
         <div class="footer__block">
@@ -535,7 +554,7 @@
           </div>
         </form>
       </div>
-    </footer>
+    </footer> -->
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -614,7 +633,33 @@
         </form>
       </div>
     </div>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
 <!-- Врахувати висоту хедера

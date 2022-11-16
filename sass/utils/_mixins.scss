@@ -10,3 +10,9 @@
   color: $color;
   transition: color var(--timing-function);
 }
+
+// @mixin media-screen($min-w $max-w) {
+//   @media screen and (min-width: $min-w) {
+
+//   };
+// }

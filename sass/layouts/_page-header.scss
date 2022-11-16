@@ -8,13 +8,14 @@
 }
 
 .nav {
-  @include flex-centered(baseline);
+  display: inline-block;
+  @include flex-centered(baseline, space-between);
 }
 
 .menu__items-nav {
   margin-left: 93px;
 }
-
+   
 .menu__link,
 .menu__contact {
   @include flex-centered(baseline);
@@ -64,6 +65,10 @@
 
 .menu {
   @include flex-centered(baseline);
+  @media screen and (max-width:768px){
+    display: none;
+    position: absolute;
+  }
 }
 
 .menu__item {
@@ -81,9 +86,29 @@
 }
 
 
-/* активна сторінка */
-
 .menu__icon {
   margin-right: 10px;
   fill: currentColor;
 }
+
+// Меню бургер 
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  // 
+  & .icon-cross {
+    display: none;
+  }
+  &.is-open .icon-cross {
+    display: block;
+  }
+  &.is-open .icon-menu {
+    display: none;
+  }
+}
+
+
+

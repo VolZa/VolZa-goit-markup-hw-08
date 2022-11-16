@@ -54,7 +54,7 @@
   color: var(--white-acsent);
   background-color: var(--card-hover);
   
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition:  transform var(--timing-function);
   .galery__card-link:hover & {
     transform: translateY(0);
