@@ -42,7 +42,7 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="menu-button is-open">
+        <!-- <button type="button" class="menu-button is-open">
           <svg width="40" height="40" aria-label="Перемикач мобільного меню">
             <use
               class="icon-cross"
@@ -53,7 +53,8 @@
               href="./images/icon/symbol-defs.svg#icon-close_40px"
             ></use>
           </svg>
-        </button>
+        </button> -->
+
         <ul class="menu items">
           <li class="menu__item">
             <a class="link menu__contact" href="mailto:info@devstudio.com">
@@ -75,17 +76,30 @@
             >
           </li>
         </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewbox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
       </div>
-      <ul class="cocial-name">
-        <li><a href="" class="social-text link">Instagram</a></li>
-        <li><a href="" class="social-text link">Twitter</a></li>
-        <li><a href="" class="social-text link">Facebook</a></li>
-        <li><a href="" class="social-text link">LinkedIn</a></li>
-      </ul>
     </header>
 
     <main>
-      <section class="section hero">
+      <!-- <section class="section hero">
         <div class="container">
           <h1 class="hero__title title">
             Ефективні рішення для вашого бізнесу
@@ -94,7 +108,7 @@
             Замовити послугу
           </button>
         </div>
-      </section>
+      </section> -->
       <!-- <section class="menu-mobile">
 
       </section> -->
@@ -157,7 +171,7 @@
         </div>
       </section>
 
-      <!-- <section class="section activity">
+      <section class="section activity">
         <div class="container">
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="items activity__items">
@@ -199,7 +213,8 @@
           </ul>
         </div>
       </section>
-      <section class="section team">
+
+      <!-- <section class="section team">
         <div class="container">
           <h2 class="title">Наша команда</h2>
           <ul class="team__items items">
@@ -408,7 +423,8 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
+
       <section class="section customers">
         <div class="container">
           <h2 class="title">Постійні клієнти</h2>
@@ -458,7 +474,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- 
     <footer class="footer footer__wrapper">
@@ -638,7 +654,7 @@
       <button class="menu-toggle js-close-menu">
         <svg
           fill="currentColor"
-          viewBox="0 0 20 20"
+          viewbox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
@@ -656,6 +672,12 @@
         <li><a href="" class="link">Products</a></li>
         <li><a href="" class="link">Contacts</a></li>
         <li><a href="" class="link">Career</a></li>
+      </ul>
+      <ul class="cocial-name">
+        <li><a href="" class="social-text link">Instagram</a></li>
+        <li><a href="" class="social-text link">Twitter</a></li>
+        <li><a href="" class="social-text link">Facebook</a></li>
+        <li><a href="" class="social-text link">LinkedIn</a></li>
       </ul>
     </div>
     <script src="./js/modal.js"></script>

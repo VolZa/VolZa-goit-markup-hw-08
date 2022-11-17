@@ -365,6 +365,8 @@ body {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  position: relative;
+  outline: tomato;
 }
 
 .nav {
@@ -372,6 +374,7 @@ body {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  outline: tomato;
 }
 
 .menu__items-nav {
@@ -423,6 +426,7 @@ body {
 }
 
 .menu {
+  outline: orchid;
   display: flex;
   align-items: baseline;
   justify-content: center;
@@ -466,6 +470,38 @@ body {
 }
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
 }
 
 .hero {
@@ -563,6 +599,12 @@ body {
   font-size: 14px;
   line-height: 1.14;
   color: var(--white-acsent);
+}
+
+@media screen and (max-width: 1200px) {
+  .activity {
+    display: none;
+  }
 }
 
 .team {
