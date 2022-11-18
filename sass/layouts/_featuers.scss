@@ -21,7 +21,20 @@
 }
 
 .features__item {
+  // display: flex;
+  margin-bottom: 30px;
   width: 270px;
+  &:last-child{
+    margin-bottom: 0px;
+  }
+  &:nth-last-child(2) {
+  @media screen and (min-width:768px) {
+      margin-bottom: 0px;
+    }
+  }
+  @media screen and (min-width:1200px){
+    margin-bottom: 0px;
+  } 
 }
 
 .features__thumb {

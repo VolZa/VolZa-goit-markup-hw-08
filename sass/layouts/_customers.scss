@@ -1,8 +1,10 @@
 .customers__items{
-  @include flex-centered($justify: space-between);
+  @include flex-centered();
+  // $justify: space-between
   list-style: none;
   gap: 0px 30px;
-  // word-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .customers__item {
