@@ -22,7 +22,7 @@
   </head>
 
   <body>
-    <header class="header header__body">
+    <!-- <header class="header header__body">
       <div class="container header__container">
         <nav class="nav">
           <a class="logo logo--dark" href="./index.html"
@@ -41,8 +41,8 @@
               <a class="link menu__link" href="#">Контакти</a>
             </li>
           </ul>
-        </nav>
-        <!-- <button type="button" class="menu-button is-open">
+        </nav> -->
+    <!-- <button type="button" class="menu-button is-open">
           <svg width="40" height="40" aria-label="Перемикач мобільного меню">
             <use
               class="icon-cross"
@@ -55,7 +55,7 @@
           </svg>
         </button> -->
 
-        <ul class="menu items">
+    <!-- <ul class="menu items">
           <li class="menu__item">
             <a class="link menu__contact" href="mailto:info@devstudio.com">
               <svg class="menu__icon" width="16" height="12">
@@ -96,7 +96,7 @@
           </svg>
         </button>
       </div>
-    </header>
+    </header> -->
 
     <main>
       <section class="section hero">
@@ -109,9 +109,7 @@
           </button>
         </div>
       </section>
-      <!-- <section class="menu-mobile">
-
-      </section> -->
+      <section class="menu-mobile"></section>
       <section class="section features">
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
@@ -214,13 +212,17 @@
         </div>
       </section>
 
-      <!-- <section class="section team">
+      <section class="section team">
         <div class="container">
           <h2 class="title">Наша команда</h2>
           <ul class="team__items items">
             <li>
-              <img
-                class="team__img"
+              <img class="team__img"
+                srcset="
+                  ./images/team/team1-desk-1x.jpeg 1x,
+                  ./images/team/team1-desk-2x.jpeg 2x
+                "
+                
                 src="./images/team-1.jpg"
                 alt="Игорь Демьяненко"
                 width="270"
@@ -423,7 +425,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <section class="section customers">
         <div class="container">
@@ -476,8 +478,8 @@
         </div>
       </section>
     </main>
-    <!-- 
-    <footer class="footer footer__wrapper">
+
+    <!-- <footer class="footer footer__wrapper">
       <div class="container footer__container">
         <div class="footer__block">
           <a class="logo logo--white" href="./index.html">
@@ -629,22 +631,22 @@
               placeholder="Введіть текст"
             ></textarea>
           </div>
-          <!-- <div class="checkbox-wrapper"> -->
-          <label for="modal__checkbox" class="label">
-            <input
-              type="checkbox"
-              name="checkbox"
-              id="modal__checkbox"
-              class="checkbox"
-              value=""
-            />
-            <span class="checkbox-icon"></span>
-            Погоджуюся з розсилкою та приймаю
-            <a class="ref" href=""
-              ><span class="ref-text">Умови договору</span>
-            </a>
-          </label>
-          <!-- </div> -->
+          <div class="checkbox-wrapper">
+            <label for="modal__checkbox" class="label">
+              <input
+                type="checkbox"
+                name="checkbox"
+                id="modal__checkbox"
+                class="checkbox"
+                value=""
+              />
+              <span class="checkbox-icon"></span>
+              Погоджуюся з розсилкою та приймаю
+              <a class="ref" href=""
+                ><span class="ref-text">Умови договору</span>
+              </a>
+            </label>
+          </div>
           <button type="submit" class="modal__button button">Відправити</button>
         </form>
       </div>
@@ -684,8 +686,8 @@
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
-<!-- Врахувати висоту хедера
-      <script>
+<!-- Врахувати висоту хедера -->
+<!-- <script>
       const { height: pageHeaderHeight } = document
         .querySelector(".header__container")
         .getBoundingClientRect();

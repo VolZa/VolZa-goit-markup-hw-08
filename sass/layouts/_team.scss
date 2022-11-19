@@ -4,7 +4,8 @@
 
  .team__items{
   @include flex-centered($justify: space-between);
-  gap: 0px 30px;
+  flex-direction: column;
+  gap: 30px;
  }
 
  .team__card {
