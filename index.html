@@ -22,7 +22,7 @@
   </head>
 
   <body>
-    <!-- <header class="header header__body">
+    <header class="header header__body">
       <div class="container header__container">
         <nav class="nav">
           <a class="logo logo--dark" href="./index.html"
@@ -41,8 +41,8 @@
               <a class="link menu__link" href="#">Контакти</a>
             </li>
           </ul>
-        </nav> -->
-    <!-- <button type="button" class="menu-button is-open">
+        </nav>
+        <!-- <button type="button" class="menu-button is-open">
           <svg width="40" height="40" aria-label="Перемикач мобільного меню">
             <use
               class="icon-cross"
@@ -55,7 +55,7 @@
           </svg>
         </button> -->
 
-    <!-- <ul class="menu items">
+        <ul class="menu menu__contacts items">
           <li class="menu__item">
             <a class="link menu__contact" href="mailto:info@devstudio.com">
               <svg class="menu__icon" width="16" height="12">
@@ -96,7 +96,7 @@
           </svg>
         </button>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <section class="section hero">
@@ -217,18 +217,40 @@
           <h2 class="title">Наша команда</h2>
           <ul class="team__items items">
             <li>
-              <img class="team__img"
-                srcset="
-                  ./images/team/team1-desk-1x.jpeg 1x,
-                  ./images/team/team1-desk-2x.jpeg 2x
-                "
-                
-                src="./images/team-1.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team1-desk-1x.jpg 1x,
+                    ./images/team/team1-desk-2x.jpg 2x
+                  "
+                  width="270"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team1-tab-1x.jpg 1x,
+                    ./images/team/team1-tab-2x.jpg 2x
+                  "
+                  width="354"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team1-mob-1x.jpg 1x,
+                    ./images/team/team1-mob-2x.jpg 2x
+                  "
+                  width="450"
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  class="team__img"
+                  src="./images/team/team1-mob-2x.jpg"
+                  alt="Игорь Демьяненко"
+                />
+              </picture>
               <div class="team__card">
-                <h3 class="team__subtitle">Ігор Дем'яненко</h3>
+                <h3 class="team__subtitle subtitle">Ігор Дем'яненко</h3>
                 <p class="team__text" lang="en">Product Designer</p>
                 <ul class="social social__icons items">
                   <li class="thumb thumb__social">
@@ -272,14 +294,41 @@
             </li>
 
             <li>
-              <img
-                class="team__img"
-                src="./images/team-2.jpg"
-                alt="Ольга Репина"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team2-desk-1x.jpg 1x,
+                    ./images/team/team2-desk-2x.jpg 2x
+                  "
+                  width="270"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team2-tab-1x.jpg 1x,
+                    ./images/team/team2-tab-2x.jpg 2x
+                  "
+                  width="354"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team2-mob-1x.jpg 1x,
+                    ./images/team/team2-mob-2x.jpg 2x
+                  "
+                  width="450"
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  class="team__img"
+                  src="./images/team/team2-mob-2x.jpg"
+                  alt="Ольга Репина"
+                />
+              </picture>
+
               <div class="team__card">
-                <h3 class="team__subtitle">Ольга Рєпіна</h3>
+                <h3 class="team__subtitle subtitle">Ольга Рєпіна</h3>
                 <p class="team__text" lang="en">Frontend Developer</p>
                 <ul class="social social__icons items">
                   <li class="thumb thumb__social">
@@ -323,14 +372,41 @@
             </li>
 
             <li>
-              <img
-                class="team__img"
-                src="./images/team-3.jpg"
-                alt="Микола Тарасов"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team3-desk-1x.jpg 1x,
+                    ./images/team/team3-desk-2x.jpg 2x
+                  "
+                  width="270"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team3-tab-1x.jpg 1x,
+                    ./images/team/team3-tab-2x.jpg 2x
+                  "
+                  width="354"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team3-mob-1x.jpg 1x,
+                    ./images/team/team3-mob-2x.jpg 2x
+                  "
+                  width="450"
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  class="team__img"
+                  src="./images/team/team3-mob-2x.jpg"
+                  alt="Микола Тарасов"
+                />
+              </picture>
+
               <div class="team__card">
-                <h3 class="team__subtitle">Микола Тарасов</h3>
+                <h3 class="team__subtitle subtitle">Микола Тарасов</h3>
                 <p class="team__text" lang="en">Marketing</p>
                 <ul class="social social__icons items">
                   <li class="thumb thumb__social">
@@ -374,14 +450,41 @@
             </li>
 
             <li>
-              <img
-                class="team__img"
-                src="./images/team-4.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team4-desk-1x.jpg 1x,
+                    ./images/team/team4-desk-2x.jpg 2x
+                  "
+                  width="270"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team4-tab-1x.jpg 1x,
+                    ./images/team/team4-tab-2x.jpg 2x
+                  "
+                  width="354"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team4-mob-1x.jpg 1x,
+                    ./images/team/team4-mob-2x.jpg 2x
+                  "
+                  width="450"
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  class="team__img"
+                  src="./images/team/team4-mob-2x.jpg"
+                  alt="Михайло Єрмаков"
+                />
+              </picture>
+
               <div class="team__card">
-                <h3 class="team__subtitle">Михайло Єрмаков</h3>
+                <h3 class="team__subtitle subtitle">Михайло Єрмаков</h3>
                 <p class="team__text" lang="en">UI Designer</p>
                 <ul class="social social__icons items">
                   <li class="thumb thumb__social">
@@ -479,76 +582,84 @@
       </section>
     </main>
 
-    <!-- <footer class="footer footer__wrapper">
+    <footer class="footer footer__wrapper">
       <div class="container footer__container">
-        <div class="footer__block">
-          <a class="logo logo--white" href="./index.html">
-            <span class="logo__accent">Web</span>Studio
-          </a>
-          <address class="footer__address">
-            <ul class="items">
-              <li class="footer__item">
-                <a
-                  class="link address"
-                  href="https://goo.gl/maps/3Kuta68CW6E7DT3t5"
-                  target="_blank"
-                  rel="noopener nofollow"
-                  >м.Київ, пр-т Лесі Українки, 26</a
-                >
+        <!-- <div class="container__container"> -->
+        <div class="footer__block-integration">
+          <div class="footer__block">
+            <a class="logo logo--white" href="./index.html">
+              <span class="logo__accent">Web</span>Studio
+            </a>
+            <address class="footer__address">
+              <ul class="items items__address">
+                <li class="footer__item">
+                  <a
+                    class="link address"
+                    href="https://goo.gl/maps/3Kuta68CW6E7DT3t5"
+                    target="_blank"
+                    rel="noopener nofollow"
+                    >м.Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link link" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link link" href="tel:+380991111111"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__block footer-social">
+            <h3 class="footer__subtitle subtitle">приєднуйтесь</h3>
+            <ul class="social__icons items">
+              <li class="footer__icon thumb__social">
+                <a href="" class="icon-social__footer icon-social">
+                  <svg class="icon-social__icon" width="22" height="22">
+                    <use
+                      href="./images/icon/symbol-defs.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item">
-                <a class="footer__link link" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
+              <li class="footer__icon thumb__social">
+                <a href="" class="icon-social__footer icon-social">
+                  <svg class="icon-social__icon" width="22" height="22">
+                    <use
+                      href="./images/icon/symbol-defs.svg#icon-twitter "
+                    ></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item">
-                <a class="footer__link link" href="tel:+380991111111"
-                  >+38 099 111 11 11</a
-                >
+              <li class="footer__icon thumb__social">
+                <a href="" class="icon-social__footer icon-social">
+                  <svg class="icon-social__icon" width="22" height="22">
+                    <use
+                      href="./images/icon/symbol-defs.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__icon thumb__social">
+                <a href="" class="icon-social__footer icon-social">
+                  <svg class="icon-social__icon" width="22" height="22">
+                    <use
+                      href="./images/icon/symbol-defs.svg#icon-linkedin "
+                    ></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="footer__block footer-social">
-          <h3 class="footer__subtitle subtitle">приєднуйтесь</h3>
-          <ul class="social__icons items">
-            <li class="footer__icon thumb__social">
-              <a href="" class="icon-social__footer icon-social">
-                <svg class="icon-social__icon" width="22" height="22">
-                  <use
-                    href="./images/icon/symbol-defs.svg#icon-instagram"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__icon thumb__social">
-              <a href="" class="icon-social__footer icon-social">
-                <svg class="icon-social__icon" width="22" height="22">
-                  <use href="./images/icon/symbol-defs.svg#icon-twitter "></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__icon thumb__social">
-              <a href="" class="icon-social__footer icon-social">
-                <svg class="icon-social__icon" width="22" height="22">
-                  <use href="./images/icon/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__icon thumb__social">
-              <a href="" class="icon-social__footer icon-social">
-                <svg class="icon-social__icon" width="22" height="22">
-                  <use
-                    href="./images/icon/symbol-defs.svg#icon-linkedin "
-                  ></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <form action="" footer__block>
+        <!-- </div> -->
+        <form action="" class="footer__block-form">
           <h3 class="footer__subtitle subtitle">Підпишіться на розсилку</h3>
-          <div>
+          <div class="footer__block-form-subgroup">
             <label>
               <input
                 class="footer__input"
@@ -572,7 +683,7 @@
           </div>
         </form>
       </div>
-    </footer> -->
+    </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -652,7 +763,7 @@
       </div>
     </div>
 
-    <div class="menu-container js-menu-container" id="mobile-menu">
+    <!-- <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg
           fill="currentColor"
@@ -681,7 +792,7 @@
         <li><a href="" class="social-text link">Facebook</a></li>
         <li><a href="" class="social-text link">LinkedIn</a></li>
       </ul>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>

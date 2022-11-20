@@ -1,11 +1,20 @@
 .team {
+  padding: 60px 0;
   background: var(--white-background);
  }
 
  .team__items{
-  @include flex-centered($justify: space-between);
-  flex-direction: column;
+  @include flex-centered($justify: none);
+  flex-wrap: wrap;
+  // flex-direction: column;
+  // @include width-calc(1, 30px);
   gap: 30px;
+  @include  mobile {
+    min-width: 480px;
+  }
+  @include tablet {
+    min-width: 768px;
+  }
  }
 
  .team__card {
@@ -15,6 +24,9 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   /* outline: 1px solid olive; */
+  @include tablet{
+    padding: 30px 0 24px;
+  }
  }
 
  .team__subtitle {
@@ -22,6 +34,7 @@
   font-size: 16px;  
   line-height: 1.19;
   margin-bottom: 10px;
+  text-transform: none;
  }
 
  .team__text {

@@ -1,11 +1,20 @@
 .features {
-  padding-bottom: 0;
+  padding:60px 0;
+  @include desktop {
+    padding:94px 0;
+  }
+
 }
 
 .feature__subtitle {
+  display: flex;
+  justify-content: center;
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
+  @include tablet{
+    display: block;
+  }
 }
 
 .feature__text {

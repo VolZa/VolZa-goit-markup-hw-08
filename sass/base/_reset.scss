@@ -16,18 +16,6 @@ img {
   height: auto;
 }
 
-h2{
-  margin: 0 auto 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  @media screen and (max-width:1200px) {
-    margin-bottom: 30px;
-    font-size: 28px;
-    line-height: 1.18;
-  }
-}
-
 .items,
 .filters,
 .galery {

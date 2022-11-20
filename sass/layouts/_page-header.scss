@@ -1,6 +1,10 @@
 .header__body {
   border-bottom: 1px solid #ECECEC;
-  padding: 24px 0;
+  padding: 10px 0 9px;
+  // padding: 24px 0;
+  @include tablet{
+    padding: 24px 0 23px;
+  }
 }
 
 .header__container{
@@ -17,7 +21,11 @@
 }
 
 .menu__items-nav {
-  margin-left: 93px;
+  margin-left: 87px;
+  @include desktop {
+    margin-left: 93px;
+  }
+  
 }
    
 .menu__link,
@@ -68,14 +76,24 @@
 
 
 .menu {
-  outline: orchid;
-  @include flex-centered(baseline);
-  @media screen and (max-width:768px){
-    display: none;
-    position: absolute;
+  display: none;
+  position: absolute;
+  outline: 1px solid orchid;
+  // @include flex-centered(baseline);
+  @include tablet {
+    display: flex;
+    position: relative;
   }
 }
-
+.menu__contacts{
+  @include tablet{
+    display: flex;
+    flex-direction: column;
+  }
+  @include desktop{
+    flex-direction: row;
+  }
+}
 .menu__item {
   position: relative;
   &:not(:last-child) {
