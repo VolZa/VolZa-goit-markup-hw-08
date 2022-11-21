@@ -1,14 +1,17 @@
 .header__body {
   border-bottom: 1px solid #ECECEC;
   padding: 10px 0 9px;
-  // padding: 24px 0;
+  
   @include tablet{
-    padding: 24px 0 23px;
+    padding: 26px 0 13px;
+  }
+  @include desktop{
+    padding: 24px 0;
   }
 }
 
 .header__container{
-  @include flex-centered(baseline, space-between);
+  @include flex-centered(normal, space-between);
   position: relative;
   outline: tomato;
 
@@ -30,7 +33,9 @@
    
 .menu__link,
 .menu__contact {
-  @include flex-centered(baseline);
+  @include flex-centered(baseline, normal);
+  // @include flex-centered(baseline);
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -78,7 +83,7 @@
 .menu {
   display: none;
   position: absolute;
-  outline: 1px solid orchid;
+  // outline: 1px solid orchid;
   // @include flex-centered(baseline);
   @include tablet {
     display: flex;
@@ -92,6 +97,7 @@
   }
   @include desktop{
     flex-direction: row;
+    align-items: baseline;
   }
 }
 .menu__item {
@@ -100,7 +106,14 @@
     margin-right: 50px;
   }
 }
-
+.menu__item-contact{
+  margin: 0;
+  @include desktop {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
 
 
 /* при натисканні  */
@@ -112,6 +125,9 @@
 .menu__icon {
   margin-right: 10px;
   fill: currentColor;
+  .menu__item-contact:last-child &{
+    margin: 4px 12px 0 0;
+  }
 }
 
 // Меню бургер 

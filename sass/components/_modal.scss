@@ -4,12 +4,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
-
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
+  
   border-radius: 4px;
 
   background-color: var(--white-acsent);
+  @include desktop {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal__input {
@@ -38,7 +42,12 @@
   text-align: center;
   font-size: 20px;
   font-weight: 700;
-  line-height: 1.15;
+  line-height: 1.5;
+  @include desktop {
+    
+    line-height: 1.15;
+  }
+
 }
 
 .modal__input-wrapper {
@@ -94,17 +103,18 @@
 
 .label {
   position: relative;
-  padding-left: 35px;
+  padding-left: 25px;
   margin-bottom: 30px;
   color: var(--color-context);
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   .checkbox-icon {
     content: "";
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 12px;
+    left: 0px;
     display: inline-block;
   
     width: 16px;
@@ -115,6 +125,14 @@
     transition: background-color var(--timing-function),
       border-color var(--timing-function),
       box-shadow $timingFunction;
+      @include desktop {
+        left: 12px;
+      }  
+  }
+  @include desktop {
+    padding-left: 35px;
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 
