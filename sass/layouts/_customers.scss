@@ -14,16 +14,23 @@
 }
 
 .customers__item {
-  width: 210px;
+  // width: 210px;
   height: 92px;
-  @include tablet{
-    width: 226px;
+  @include mobile {
+    @include width-calc(2, 30px);
   }
-  @include desktop{
-    width: 170px;
+  @include tablet {
+    @include width-calc(3, 30px);
   }
-  
-  
+  @include desktop {
+    @include width-calc(6, 30px);
+  }
+  // @include tablet{
+  //   width: 226px;
+  // }
+  // @include desktop{
+  //   width: 170px;
+  // }
   &:hover {
     border-color: var(--color-chromatic-usual);
   }

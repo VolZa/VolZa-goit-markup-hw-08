@@ -132,6 +132,9 @@
 .menu-open, .menu-close{
   background-color: transparent;
   border: var(--white-acsent);
+  @include tablet{
+    display: none;
+  }
 }
 // Меню бургер 
 .menu-button {

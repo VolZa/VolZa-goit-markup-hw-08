@@ -27,6 +27,9 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  @include desktop {
+    align-items: flex-start;
+  }
 }
 .footer-social{
   @include tablet {
@@ -108,6 +111,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include desktop {
+    align-items: flex-start;
+  }
  }
  .address {
   @include addrres-footer(var(--white-acsent));
