@@ -228,3 +228,34 @@
 
 }
 
+.cocial-name {
+  display: flex;
+
+}
+
+.cocial-name__item{
+display: block;
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.cocial-name__text::after {
+   
+  position: relative;
+   left: 10px;
+  //   bottom: -28px;
+  content: '|';
+  left: 10px;
+  &:not(:last-child){
+ 
+  }
+  
+    // display: block;
+    // width: calc(100% + 6px);
+    // height: 4px;
+    // border-radius: 2px;
+  
+    // background-color: var(--color-chromatic-usual);
+    // opacity: 0; 
+}
