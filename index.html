@@ -76,6 +76,7 @@
             >
           </li>
         </ul>
+
         <button
           class="menu-toggle js-open-menu"
           aria-expanded="false"
@@ -96,6 +97,129 @@
           </svg>
         </button>
       </div>
+
+      <!-- ---------------------- Мобільне меню ---------------------- -->
+      <div class="mobile-menu">
+        <div class="container">
+          <div class="mobile-menu__top">
+            <!-- <button type="button" class="menu-close" data-menu-close> -->
+            <!-- <svg class="menu__icon-close" width="40" height="40"> -->
+            <svg class="menu-close" width="40" height="40" data-menu-close>
+              <use href="./images/icon/symbol-defs.svg#icon-close_40px"></use>
+            </svg>
+            <!-- </button> -->
+
+            <ul class="mobile-menu__items items">
+              <li class="mobile-menu__item active">
+                <a href="" class="link mobile-menu__link-item">Студія</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="" class="link mobile-menu__link-item">Портфоліо</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="" class="link mobile-menu__link-item">Контакти</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mobile-contact">
+            <ul class="mobile-menu__contacts items">
+              <li class="mobile-menu__contact">
+                <a class="link" href="mailto:info@devstudio.com">
+                  <!-- <svg class="menu__icon" width="16" height="12">
+                    <use href="./images/icon/symbol-defs.svg#icon-envelope"></use>
+                  </svg> -->
+                  info@devstudio.com</a
+                >
+              </li>
+
+              <li class="mobile-menu__contact">
+                <a class="link" href="tel:+380961111111">
+                  <!-- <svg class="menu__icon" width="10" height="16">
+                    <use href="./images/icon/symbol-defs.svg#icon-smartphone "></use>
+                  </svg> -->
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+
+            <!--  -->
+            <ul class="cocial-name items">
+              <li><a href="" class="social-text link">Instagram</a></li>
+              <li><a href="" class="social-text link">Twitter</a></li>
+              <li><a href="" class="social-text link">Facebook</a></li>
+              <li><a href="" class="social-text link">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- ====================Мобільне меню============ -->
+
+      <!-- <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-close" data-menu-close>X</button>
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-list__item">
+                <a
+                  class="mob-menu-list__link link current"
+                  href="https://www.google.com/"
+                  >About</a
+                >
+              </li>
+              <li class="mob-menu-list__item">
+                <a class="mob-menu-list__link link" href="#prices"
+                  >Services and prices</a
+                >
+              </li>
+              <li class="mob-menu-list__item">
+                <a class="mob-menu-list__link link" href="#barbers">Barbers</a>
+              </li>
+              <li class="mob-menu-list__item">
+                <a
+                  class="mob-menu-list__link link"
+                  href="https://www.google.com/"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <div class="mob-connect">
+              <a class="mob-connect__tel link" href="tel:+380441111111">
+                +38 044 111 11 11</a
+              >
+              <button
+                class="mob-connect__btn btn btn--color-dark"
+                type="button"
+                data-modal-open
+              >
+                Online-booking
+              </button>
+            </div>
+            <ul class="mob-soc list">
+              <li class="mob-soc__item">
+                <a
+                  class="mob-soc__link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mob-soc__item">
+                <a
+                  class="mob-soc__link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div> -->
     </header>
 
     <main>
@@ -779,19 +903,6 @@
           ></path>
         </svg>
       </button>
-
-      <ul class="mobile-menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
-      </ul>
-      <ul class="cocial-name">
-        <li><a href="" class="social-text link">Instagram</a></li>
-        <li><a href="" class="social-text link">Twitter</a></li>
-        <li><a href="" class="social-text link">Facebook</a></li>
-        <li><a href="" class="social-text link">LinkedIn</a></li>
-      </ul>
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
