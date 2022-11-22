@@ -234,16 +234,17 @@
 }
 
 .cocial-name__item{
-display: block;
+  display: block;
+  > .link{color: var(--color-chromatic-usual);}
   &:not(:last-child) {
     margin-right: 20px;
   }
 }
 
 .cocial-name__text::after {
-   
   position: relative;
    left: 10px;
+   color: rgba(33, 33, 33, 0.2);
   //   bottom: -28px;
   content: '|';
   left: 10px;
