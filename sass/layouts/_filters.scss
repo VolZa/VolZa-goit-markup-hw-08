@@ -1,8 +1,31 @@
+.portfolio {
+  padding-top: 60px;
+  @include desktop{
+    padding-top: 94px;
+  }
+}
 .filters {
-  @include flex-centered();
-  margin:0 auto 50px;
+    @include flex-centered(normal, normal);
+    flex-wrap: wrap;
+    width: 400px;
+    margin-bottom: 40px;
+
   &__item:not(:last-child) {
     margin-right: 8px;
+  }
+  &__item:first-child {
+    margin-bottom: 15px;
+  }
+  @include tablet {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+    &__item:first-child {
+      margin-bottom: 0;
+    }
+  }
+  @include desktop {
+    margin-bottom: 50px;
   }
 }
 
