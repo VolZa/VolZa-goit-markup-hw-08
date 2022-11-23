@@ -7,22 +7,15 @@
 .filters {
     @include flex-centered(normal, normal);
     flex-wrap: wrap;
-    width: 400px;
+    max-width: 400px;
+    justify-content: left;
+    gap: 15px 8px;
     margin-bottom: 40px;
 
-  &__item:not(:last-child) {
-    margin-right: 8px;
-  }
-  &__item:first-child {
-    margin-bottom: 15px;
-  }
   @include tablet {
     justify-content: center;
-    width: 100%;
+    max-width: 100%;
     margin-bottom: 30px;
-    &__item:first-child {
-      margin-bottom: 0;
-    }
   }
   @include desktop {
     margin-bottom: 50px;
