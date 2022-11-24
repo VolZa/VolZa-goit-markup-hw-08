@@ -1,8 +1,4 @@
 .customers {
-  padding: 60px 0;
-  @include desktop {
-    padding: 94px 0;
-  }
 }
 .customers__items{
   @include flex-centered();

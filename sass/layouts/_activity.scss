@@ -1,3 +1,10 @@
+.activity {
+  padding-top: 0;
+  display: none;
+  @include desktop{
+    display: block;
+  }
+}
 .activity__items {
   @include flex-centered($justify: space-between);
   flex-wrap: wrap;
@@ -21,12 +28,4 @@
   font-size: 14px;
   line-height: 1.14;
   color: var(--white-acsent);
-}
-
-.activity {
-  padding-top: 0;
-  display: none;
-  @include desktop{
-    display: block;
-  }
 }
