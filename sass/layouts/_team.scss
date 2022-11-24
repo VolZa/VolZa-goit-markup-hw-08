@@ -5,8 +5,7 @@
  .team__items{
   @include flex-centered($justify: none);
   flex-wrap: wrap;
-  // flex-direction: column;
-  // @include width-calc(1, 30px);
+
   gap: 30px;
   @include mobile {
     min-width: 480px;
