@@ -92,7 +92,6 @@
 .checkbox-wrapper {
   position: relative;
   margin-bottom: 30px;
-  // outline: 1px solid tomato;
 }
 
 .checkbox {
@@ -110,10 +109,9 @@
 }  
 
 .label {
-  // display: inline-block;
+  display: flex;
   position: relative;
   padding-left: 25px;
-  margin-bottom: 30px;
   color: var(--color-context);
   font-size: 12px;
   line-height: 1.17;
