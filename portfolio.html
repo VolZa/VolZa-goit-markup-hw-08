@@ -42,18 +42,6 @@
             </li>
           </ul>
         </nav>
-        <!-- <button type="button" class="menu-button is-open">
-          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-            <use
-              class="icon-cross"
-              href="./images/icon/symbol-defs.svg#icon-menu_40px"
-            ></use>
-            <use
-              class="icon-menu"
-              href="./images/icon/symbol-defs.svg#icon-close_40px"
-            ></use>
-          </svg>
-        </button> -->
 
         <ul class="menu menu__contacts items">
           <li class="menu__item-contact">
@@ -77,31 +65,7 @@
           </li>
         </ul>
 
-        <!-- <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-          data-menu-open
-        >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewbox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button> -->
-
         <button type="button" class="menu-open" data-menu-open>
-          <!-- <svg class="modal__close-icon" width="18" height="18">
-            <use href="./images/icon/symbol-defs.svg#icon-close"></use>
-          </svg> -->
           <svg
             class="menu-open__burger-icon"
             width="24"
@@ -119,23 +83,26 @@
         </button>
       </div>
 
-      <!-- ---------------------- Мобільне меню ---------------------- -->
+      <!-- ------------------- Мобільне меню ---------------------- -->
       <div class="mobile-menu is-hidden" data-menu>
         <div class="container">
           <div class="mobile-menu__top">
             <button type="button" class="menu-close" data-menu-close>
               <svg class="menu__icon-close" width="40" height="40">
-                <!-- <svg class="menu-close" width="40" height="40" data-menu-close> -->
                 <use href="./images/icon/symbol-defs.svg#icon-close_40px"></use>
               </svg>
             </button>
 
             <ul class="mobile-menu__items items">
-              <li class="mobile-menu__item active">
-                <a href="" class="link mobile-menu__link-item">Студія</a>
-              </li>
               <li class="mobile-menu__item">
-                <a href="" class="link mobile-menu__link-item">Портфоліо</a>
+                <a href="./index.html" class="link mobile-menu__link-item"
+                  >Студія</a
+                >
+              </li>
+              <li class="mobile-menu__item active">
+                <a href="./portfolio.html" class="link mobile-menu__link-item"
+                  >Портфоліо</a
+                >
               </li>
               <li class="mobile-menu__item">
                 <a href="" class="link mobile-menu__link-item">Контакти</a>
@@ -147,9 +114,6 @@
             <ul class="mobile-menu__contacts items">
               <li class="mobile-menu__contact">
                 <a class="link mobile-menu--tel" href="tel:+380961111111">
-                  <!-- <svg class="menu__icon" width="10" height="16">
-                    <use href="./images/icon/symbol-defs.svg#icon-smartphone "></use>
-                  </svg> -->
                   +38 096 111 11 11</a
                 >
               </li>
@@ -161,8 +125,6 @@
                 >
               </li>
             </ul>
-
-            <!--  -->
             <ul class="cocial-name items">
               <li class="cocial-name__item">
                 <a href="" class="cocial-name__text link">Instagram</a>
@@ -181,72 +143,6 @@
         </div>
       </div>
       <!-- ====================Мобільне меню============ -->
-
-      <!-- <div class="mob-menu is-hidden" data-menu>
-        <div class="container">
-          <div class="mob-menu-top">
-            <button type="button" class="menu-close" data-menu-close>X</button>
-            <ul class="mob-menu-list list">
-              <li class="mob-menu-list__item">
-                <a
-                  class="mob-menu-list__link link current"
-                  href="https://www.google.com/"
-                  >About</a
-                >
-              </li>
-              <li class="mob-menu-list__item">
-                <a class="mob-menu-list__link link" href="#prices"
-                  >Services and prices</a
-                >
-              </li>
-              <li class="mob-menu-list__item">
-                <a class="mob-menu-list__link link" href="#barbers">Barbers</a>
-              </li>
-              <li class="mob-menu-list__item">
-                <a
-                  class="mob-menu-list__link link"
-                  href="https://www.google.com/"
-                  >Contacts</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="mob-menu-bottom">
-            <div class="mob-connect">
-              <a class="mob-connect__tel link" href="tel:+380441111111">
-                +38 044 111 11 11</a
-              >
-              <button
-                class="mob-connect__btn btn btn--color-dark"
-                type="button"
-                data-modal-open
-              >
-                Online-booking
-              </button>
-            </div>
-            <ul class="mob-soc list">
-              <li class="mob-soc__item">
-                <a
-                  class="mob-soc__link link"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  >Instagram</a
-                >
-              </li>
-              <li class="mob-soc__item">
-                <a
-                  class="mob-soc__link link"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  >Youtube</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div> -->
     </header>
     <main>
       <section class="section portfolio">
@@ -285,11 +181,39 @@
             <li class="galery__card">
               <a href="" class="galery__card-link link">
                 <div class="galery__card-thumb">
-                  <img
-                    src="./images/portfolio/img1.jpg"
-                    alt="Картки людей на екрані ноутбука"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img1-desk-1x.jpg 1x,
+                        ./images/portfolio/img1-desk-2x.jpg 2x
+                      "
+                      width="378"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/img1-tab-1x.jpg 1x,
+                        ./images/portfolio/img1-tab-2x.jpg 2x
+                      "
+                      width="354"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/img1-mob-1x.jpg 1x,
+                        ./images/portfolio/img1-mob-2x.jpg 2x
+                      "
+                      width="450"
+                      media="(max-width: 767.8px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/img1-mob-2x.jpg"
+                      alt="Картки людей на екрані ноутбука"
+                      width="450"
+                    />
+                  </picture>
+
                   <p class="galery__card-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -307,11 +231,39 @@
             <li class="galery__card">
               <a href="" class="galery__card-link link">
                 <div class="galery__card-thumb">
-                  <img
-                    src="./images/portfolio/img2.jpg"
-                    alt="Баскетболісти з м'ячем"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img2-desk-1x.jpg 1x,
+                        ./images/portfolio/img2-desk-2x.jpg 2x
+                      "
+                      width="378"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/img2-tab-1x.jpg 1x,
+                        ./images/portfolio/img2-tab-2x.jpg 2x
+                      "
+                      width="354"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/img2-mob-1x.jpg 1x,
+                        ./images/portfolio/img2-mob-2x.jpg 2x
+                      "
+                      width="450"
+                      media="(max-width: 767.8px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/img2-mob-2x.jpg"
+                      alt="Баскетболісти з м'ячем"
+                      width="450"
+                    />
+                  </picture>
+
                   <p class="galery__card-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -330,11 +282,39 @@
             <li class="galery__card">
               <a href="" class="galery__card-link link">
                 <div class="galery__card-thumb">
-                  <img
-                    src="./images/portfolio/img3.jpg"
-                    alt="Реклама ресторану"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img3-desk-1x.jpg 1x,
+                        ./images/portfolio/img3-desk-2x.jpg 2x
+                      "
+                      width="378"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/img3-tab-1x.jpg 1x,
+                        ./images/portfolio/img3-tab-2x.jpg 2x
+                      "
+                      width="354"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/img3-mob-1x.jpg 1x,
+                        ./images/portfolio/img3-mob-2x.jpg 2x
+                      "
+                      width="450"
+                      media="(max-width: 767.8px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/img3-mob-2x.jpg"
+                      alt="Реклама ресторану"
+                      width="450"
+                    />
+                  </picture>
+
                   <p class="galery__card-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -351,11 +331,39 @@
             <li class="galery__card">
               <a href="" class="galery__card-link link">
                 <div class="galery__card-thumb">
-                  <img
-                    src="./images/portfolio/img4.jpg"
-                    alt="Навушники"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img4-desk-1x.jpg 1x,
+                        ./images/portfolio/img4-desk-2x.jpg 2x
+                      "
+                      width="378"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/img4-tab-1x.jpg 1x,
+                        ./images/portfolio/img4-tab-2x.jpg 2x
+                      "
+                      width="354"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/img4-mob-1x.jpg 1x,
+                        ./images/portfolio/img4-mob-2x.jpg 2x
+                      "
+                      width="450"
+                      media="(max-width: 767.8px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/img4-mob-2x.jpg"
+                      alt="Навушники"
+                      width="450"
+                    />
+                  </picture>
+
                   <p class="galery__card-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -372,11 +380,39 @@
             <li class="galery__card">
               <a href="" class="galery__card-link link">
                 <div class="galery__card-thumb">
-                  <img
-                    src="./images/portfolio/img5.jpg"
-                    alt="Упаковочні коробки"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img5-desk-1x.jpg 1x,
+                        ./images/portfolio/img5-desk-2x.jpg 2x
+                      "
+                      width="378"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/img5-tab-1x.jpg 1x,
+                        ./images/portfolio/img5-tab-2x.jpg 2x
+                      "
+                      width="354"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/img5-mob-1x.jpg 1x,
+                        ./images/portfolio/img5-mob-2x.jpg 2x
+                      "
+                      width="450"
+                      media="(max-width: 767.8px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/img5-mob-2x.jpg"
+                      alt="Упаковочні коробки"
+                      width="450"
+                    />
+                  </picture>
+
                   <p class="galery__card-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -393,11 +429,39 @@
             <li class="galery__card">
               <a href="" class="galery__card-link link">
                 <div class="galery__card-thumb">
-                  <img
-                    src="./images/portfolio/img6.jpg"
-                    alt="Монітор ПК"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img6-desk-1x.jpg 1x,
+                        ./images/portfolio/img6-desk-2x.jpg 2x
+                      "
+                      width="378"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/img6-tab-1x.jpg 1x,
+                        ./images/portfolio/img6-tab-2x.jpg 2x
+                      "
+                      width="354"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/img6-mob-1x.jpg 1x,
+                        ./images/portfolio/img6-mob-2x.jpg 2x
+                      "
+                      width="450"
+                      media="(max-width: 767.8px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/img6-mob-2x.jpg"
+                      alt="Монітор ПК"
+                      width="450"
+                    />
+                  </picture>
+
                   <p class="galery__card-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -414,11 +478,39 @@
             <li class="galery__card">
               <a href="" class="galery__card-link link">
                 <div class="galery__card-thumb">
-                  <img
-                    src="./images/portfolio/img7.jpg"
-                    alt="Розгортка модного журналу "
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img7-desk-1x.jpg 1x,
+                        ./images/portfolio/img7-desk-2x.jpg 2x
+                      "
+                      width="378"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/img7-tab-1x.jpg 1x,
+                        ./images/portfolio/img7-tab-2x.jpg 2x
+                      "
+                      width="354"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/img7-mob-1x.jpg 1x,
+                        ./images/portfolio/img7-mob-2x.jpg 2x
+                      "
+                      width="450"
+                      media="(max-width: 767.8px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/img7-mob-2x.jpg"
+                      alt="Розгортка модного журналу"
+                      width="450"
+                    />
+                  </picture>
+
                   <p class="galery__card-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -435,11 +527,39 @@
             <li class="galery__card">
               <a href="" class="galery__card-link link">
                 <div class="galery__card-thumb">
-                  <img
-                    src="./images/portfolio/img8.jpg"
-                    alt="Бірка"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img8-desk-1x.jpg 1x,
+                        ./images/portfolio/img8-desk-2x.jpg 2x
+                      "
+                      width="378"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/img8-tab-1x.jpg 1x,
+                        ./images/portfolio/img8-tab-2x.jpg 2x
+                      "
+                      width="354"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/img8-mob-1x.jpg 1x,
+                        ./images/portfolio/img8-mob-2x.jpg 2x
+                      "
+                      width="450"
+                      media="(max-width: 767.8px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/img8-mob-2x.jpg"
+                      alt="Бірка"
+                      width="450"
+                    />
+                  </picture>
+
                   <p class="galery__card-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -456,11 +576,39 @@
             <li class="galery__card">
               <a href="" class="galery__card-link link">
                 <div class="galery__card-thumb">
-                  <img
-                    src="./images/portfolio/img9.jpg"
-                    alt="Робота з ноутбуком"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img9-desk-1x.jpg 1x,
+                        ./images/portfolio/img9-desk-2x.jpg 2x
+                      "
+                      width="378"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/img9-tab-1x.jpg 1x,
+                        ./images/portfolio/img9-tab-2x.jpg 2x
+                      "
+                      width="354"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/img9-mob-1x.jpg 1x,
+                        ./images/portfolio/img9-mob-2x.jpg 2x
+                      "
+                      width="450"
+                      media="(max-width: 767.8px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/img9-mob-2x.jpg"
+                      alt="Робота з ноутбуком"
+                      width="450"
+                    />
+                  </picture>
+
                   <p class="galery__card-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -581,5 +729,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
